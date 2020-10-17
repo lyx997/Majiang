@@ -28,11 +28,11 @@ files = []
 
 #可调整
 #目录
-file_path = r'C:\Users\bonin\Downloads\baidu\mjdata\mjdata\output2017\MO'
+file_path = r'/home/lyx997/Downloads/output2017/MO'
 files += [os.path.join(file_path, filename) for filename in os.listdir(file_path)]
 
 #单个文件内批尺寸
-batch_size = 1000
+batch_size = 100
 #出牌策略文件数
 discard_max = 200
 #鸣牌策略文件数

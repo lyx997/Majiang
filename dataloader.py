@@ -20,7 +20,7 @@ class Mahjong(data.Dataset):
         return len(self.data)
 
     def __getitem__(self, index):
-        return transforms.ToTensor()(self.data[index].transpose(1,2,0)),  transforms.ToTensor()(self.label[index])
+        return transforms.ToTensor()(self.data[index].transpose(1,2,0)),  self.label[index]
 
     def get_fixed(self):
         return self.test_data, self.test_label

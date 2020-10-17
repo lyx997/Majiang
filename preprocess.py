@@ -3,10 +3,10 @@ import json
 from tqdm import tqdm
 
 files = []
-# file_path = 'C:/Users/bonin/Downloads/baidu/mjdata/mjdata/output2017/MO/'
-# files += [os.path.join(file_path, filename) for filename in os.listdir(file_path)]
-file_path = 'C:/Users/bonin/Downloads/baidu/mjdata/mjdata/output2017/LIU/'
+file_path = '/home/lyx997/Downloads/output2017/MO/'
 files += [os.path.join(file_path, filename) for filename in os.listdir(file_path)]
+#file_path = '/home/lyx997/Downloads/output2017/LIU/'
+#files += [os.path.join(file_path, filename) for filename in os.listdir(file_path)]
 
 info = {}
 info['da'] = {}
